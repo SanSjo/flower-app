@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { DetailPage } from './pages/DetailPage';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/detailpage/:flowerId">
+          <DetailPage />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  );
+};

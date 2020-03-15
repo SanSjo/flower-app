@@ -1,0 +1,16 @@
+img .detailImg {
+  width: 80%;
+
+}
+.emojiContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.emoji {
+ 
+}
+span {
+  color: black;
+}

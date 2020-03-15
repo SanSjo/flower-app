@@ -1,0 +1,26 @@
+body {
+  background: lightgrey;
+}
+form {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  margin-top: 20%;
+}
+
+h1 {
+  color: black;
+
+}
+
+textarea {
+ background-color: lightgrey;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid black;
+
+}
+
+button {
+  color: black;
+}
