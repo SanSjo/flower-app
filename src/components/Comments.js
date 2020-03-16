@@ -18,12 +18,8 @@ export const Comments = () => {
         if (json !== null) {
           setComments(json);
         }
-
-        console.log(json);
       })
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [postMessage]);
+  }, [flowerId, postMessage]);
 
   const handleSubmitComment = (comment) => {
     fetch(
@@ -42,16 +38,9 @@ export const Comments = () => {
       .then(() => setPostMessage(comment));
   };
 
-  console.log(comments);
-
-  // const result = Object.keys(comments).map((key) => {
-  //   return [key, comments[key]];
-  // });
   return (
     <article className="commentsContainer">
-
       <Form submitForm={handleSubmitComment} />
-
       <div className="comments">
         {Object.values(comments).map((comment) => (
           <div>
@@ -64,4 +53,3 @@ export const Comments = () => {
 };
 
 export default Comments
-

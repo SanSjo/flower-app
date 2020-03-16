@@ -1,25 +1,26 @@
 header {
- 
   width: 100%;
-  
+
   background-image: url('../assets/flower-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 0;
   display: flex;
- flex-direction: column;
-
-  
- 
+  flex-direction: column;
 }
  .navContainer {
- background: purple;
+  background: purple;
   width: 100%;
-
-
- 
  }
 
 h1 {
  color: white;
+}
+
+.navbar-brand:hover {
+  background: white;
+}
+
+.navbar {
+  background: pink;
 }

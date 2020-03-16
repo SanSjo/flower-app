@@ -3,6 +3,7 @@ body {
   font-family: 'Baloo Chettan 2', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -13,3 +14,4 @@ code {
 img {
   width: 25%;
 }
+

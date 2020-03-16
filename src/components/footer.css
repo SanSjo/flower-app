@@ -1,0 +1,23 @@
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: pink;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+
+}
+
+a:hover {
+  background: white;
+    text-decoration: none;
+    color: black;
+}

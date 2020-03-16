@@ -2,36 +2,35 @@
   background-color: lightgray;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 .comments {
- 
   width: 70%;
-
 }
 
 .comment {
- background: white;
   padding: 5px;
-  width: 60%;
-  border: 1px solid grey;
+  margin-left: 28%;
+  background: white;
   border-radius: 19px;
-
- 
 }
 
-@media only screen and (min-width: 1023px)  {
+.comment-bold {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1123px)  {
   .commentsContainer {
-  
    justify-content: center;
    width: 50%;
   }
+
   .detailContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+ 
 }
 

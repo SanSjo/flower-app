@@ -17,17 +17,13 @@ export const Form = (props) => {
   return (
     <div className="formContainer">
       <form>
-
-        <label>Comment:</label>
+        <h4>Send us your thoughts: </h4>
         <div className="input">
-
           <input
             type="text"
             rows="1"
             maxLength="300"
-            resize="false"
             onChange={(event) => setComment(event.target.value)} />
-
           <button type="submit" onClick={handleSubmitComment}>
             Send
           </button>
