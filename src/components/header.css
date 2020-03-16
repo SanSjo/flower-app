@@ -1,12 +1,24 @@
 header {
  
   width: 100%;
-  background: purple;
-  background-image: url('https://unsplash.com/photos/ct_zXHu8rcM');
-  margin-bottom: 15%;
+  
+  background-image: url('../assets/flower-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+  display: flex;
+ flex-direction: column;
 
+  
+ 
 }
+ .navContainer {
+ background: purple;
+  width: 100%;
 
+
+ 
+ }
 
 h1 {
  color: white;

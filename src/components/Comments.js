@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Form } from './Form'
+import './comments.css'
 
 export const Comments = () => {
   const [comments, setComments] = useState([]);
@@ -43,33 +44,21 @@ export const Comments = () => {
 
   console.log(comments);
 
-  const result = Object.keys(comments).map((key) => {
-    return [key, comments[key]];
-  });
+  // const result = Object.keys(comments).map((key) => {
+  //   return [key, comments[key]];
+  // });
   return (
-    <article>
+    <article className="commentsContainer">
+
       <Form submitForm={handleSubmitComment} />
-      {/* <form>
-        <h1>Tell us what you think about this flower</h1>
 
-        <textarea
-          rows="3"
-          maxLength="300"
-          onChange={(event) => setComments(event.target.value)} />
-        <button type="submit" onClick={handleSubmitComment}>
-          Send comment
-        </button>
-      </form> */}
-
-      <h3> Comments</h3>
-      {Object.values(comments).map((comment) => (
-
-        <div>
-
-          <p>{comment.comment}</p>
-
-        </div>
-      ))}
+      <div className="comments">
+        {Object.values(comments).map((comment) => (
+          <div>
+            <p className="comment"><i className="far fa-comment-dots" /> {comment.comment}</p>
+          </div>
+        ))}
+      </div>
     </article>
   );
 };

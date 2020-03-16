@@ -19,18 +19,18 @@ export const Home = () => {
   return (
     <main>
       <Header />
+
       <div className="flowers">
+
         {flowers.map((flower, flowerId) => (
-          <div className="card">
-            <Link to={`/detailpage/${flowerId}`} key={flowerId}>
+          <div key={flowerId} className="card">
+            <Link to={`/detailpage/${flowerId}`}>
+
+              <img alt="flower" src={flower.cover_image} onError="null" />
+
+              {!flower.cover_image ? <img alt="" src=".../assets/growing-plant.svg" /> : null}
               <h3>{flower.common_name}</h3>
               <p>Blooming season: {flower.blooming_season}</p>
-              <img alt="flower" src={flower.cover_image} />
-
-              <div style={{ backgroundImage: `url(${flower.cover_image})` }}>
-                {!flower.cover_image ? <h4>No pic available</h4> : null}
-
-              </div>
 
             </Link>
 

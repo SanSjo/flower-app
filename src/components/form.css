@@ -1,26 +1,62 @@
 body {
-  background: lightgrey;
+
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 form {
   display: flex;
   flex-direction: column;
- align-items: center;
-  margin-top: 20%;
+  align-items: flex-start;
+  margin-top: 0;
+  background-color: lightgray;
+  height: 100%;
 }
+
+
 
 h1 {
   color: black;
 
 }
 
-textarea {
- background-color: lightgrey;
-  width: 80%;
+input {
+ background-color: white;
+  width: 100%;
   border: none;
-  border-bottom: 1px solid black;
+  border-radius: 16px;
+ height: 30px;
+}
 
+.input {
+  display: flex;
+  align-items: center;
 }
 
 button {
   color: black;
+  border: none;
+  background-color: lightgray;
+}
+
+@media only screen and (min-width: 1123px)  {
+  .formContainer {
+    display: flex;
+ 
+
+  }
+  .form {
+
+   width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  .detailContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }

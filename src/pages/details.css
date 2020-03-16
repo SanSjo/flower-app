@@ -1,16 +1,78 @@
+section .detailInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 img .detailImg {
   width: 80%;
+  margin-top: 10%;
+  position: relative;
+  z-index: -1;
+}
 
+i .fa-search-plus {
+  position: relative;
+  z-index: 2;
+  bottom: 20px;
+}
+
+.detailImg:hover {
+  transform: scale(1.5);
+}
+
+.detailHeader {
+  background: pink;
+}
+
+h6{
+  margin-left: 20px;
+  color: grey;
 }
 .emojiContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+
   width: 100%;
 }
-.emoji {
- 
-}
+
 span {
   color: black;
+}
+
+div .product {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  max-width: 30rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow:
+    0 0 0.8rem 0.1rem rgba(darken($cAccent, 20%), 0.06),
+    0 20px 30px -10px rgba(darken($cAccent, 20%), 0.2)
+}
+
+@media only screen and (min-width: 1123px)  {
+  .detailInfo {
+    display: flex;
+   flex-direction: row;
+   width: 100%;
+ 
+  }
+  
+  .detailMain {
+    width: 100%;
+  }
+  .detailContainer {
+    width: 50%;
+
+  }
+  .detailImg {
+    height: 500px;
+  }
+  .detailHeader {
+    width: 40%;
+  }
 }

@@ -15,16 +15,23 @@ export const Form = (props) => {
   }
 
   return (
-    <div>
+    <div className="formContainer">
       <form>
-        <label>Tell us what you think about this flower</label>
-        <textarea
-          rows="1"
-          maxLength="300"
-          onChange={(event) => setComment(event.target.value)} />
-        <button type="submit" onClick={handleSubmitComment}>
-          Send comment
-        </button>
+
+        <label>Comment:</label>
+        <div className="input">
+
+          <input
+            type="text"
+            rows="1"
+            maxLength="300"
+            resize="false"
+            onChange={(event) => setComment(event.target.value)} />
+
+          <button type="submit" onClick={handleSubmitComment}>
+            Send
+          </button>
+        </div>
       </form>
     </div>
   )
