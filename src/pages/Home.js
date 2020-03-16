@@ -23,7 +23,7 @@ export const Home = () => {
         {flowers.map((flower, flowerId) => (
           <div key={flowerId} className="card">
             <Link to={`/detailpage/${flowerId}`}>
-              <img className="flower-img" alt="flower" src={flower.cover_image} onError="null" />
+              <img className="flower-img" alt="flower" src={flower.cover_image} />
             </Link>
             <div className="mask">
               <h3 className="name">{flower.common_name}</h3>

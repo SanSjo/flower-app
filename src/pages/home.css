@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin-top: 4%;
+  margin-top: 10%;
   background: url('../assets/flower-header.jpg');
 }
 
@@ -40,6 +40,7 @@ p {
   .flowers {
     column-count: 3;
     column-gap: 0.01em;
+    margin-top: 4%;
   }
 
 .card .mask {
